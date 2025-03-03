@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Edit Member</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class = "container">
+        <h1>Edit Member Form</h1>
+        <h3>Currently editing: <%=member.name%></h3>
+        <form action = "/members/<%=member._id%>?_method=PUT" method = "POST">
+            <div>
+                <label for = "name">Name:</label>
+                <input type="text" id = "name" name = "member[name]" value = "<%=member.name %>">
+            </div>
+            <div>
+                <label for = "age">Age:</label>
+                <input type="number" id = "age" name = "member[age]" value = "<%=member.age %>">
+            </div>
+            <div>
+                <label for = "phone">Phone No.:</label>
+                <input type="number" id = "phone" name = "member[phone]" value = "<%=member.phone %>">
+            </div>
+            <!-- <div>
+                <label for = "debt">Debt:</label>
+                <input type="number" id = "debt" name = "member[debt]" value = "<%=member.debt %>">
+            </div> -->
+
+            <div class="col-md-6">
+                <button class="btn btn-success btn-lg btn-block">Update Member</button>
+            </div>
+            <div class="col-md-6">
+                <a href="/members/<%=member._id%>" class="btn btn-primary btn-lg btn-block">Go Back</a>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
