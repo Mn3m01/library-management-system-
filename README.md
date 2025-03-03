@@ -1,7 +1,7 @@
 # Library Management System
 
 Hello! Welcome to my repository. This project was built as part of [Frappe's Dev Hiring Test](https://frappe.io/dev-hiring-test). As outlined in their assignment, this is a Library Management System which supports:
-- Basic [CRUD](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) operations on Books and Members.
+- Basic [CRUD] operations on Books and Members.
 - Issuing books to members
 - Returning books from members
 - Charging rent on return.
@@ -14,30 +14,6 @@ Additionally, a librarian is able to maintain:
 - Reports on popular books and highest paying members
 
 The application is compatible with Frappe's API, which is used for importing Books. 
-
-## How to use?
-
-- Install the dependencies:
-
-```
-npm install
-```
-
-- Install MongoDB and run it by following the instructions on their [docs](https://docs.mongodb.com/manual/administration/install-community/).
-
-- Start the server:
-```
-npm run dev
-```
-- Open `localhost:5000` in your browser.
-
-## Tech Stack:
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/Javascript-ffd700?style=for-the-badge&logo=Javascript&logoColor=white)
-![NodeJS](https://img.shields.io/badge/Node.js-ffffff?style=for-the-badge&logo=Node.js&logoColor=fffff)
-![Express](https://img.shields.io/badge/-Express-success?style=for-the-badge&logo=Express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ## Screenshots:
 
